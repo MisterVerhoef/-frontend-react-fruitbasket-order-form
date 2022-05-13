@@ -58,6 +58,6 @@ function Form(){
             <button type="submit">Versturen</button>
         </form>
     );
-};
+}
 
 export default Form;
