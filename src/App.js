@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CountingFruit from "./Components/CountingFruit";
+import Form from "./Components/Form";
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function ResetCounter(){
         onClick={ResetCounter}>
             Reset
         </button>
+        <Form/>
     </>
   );
 }
