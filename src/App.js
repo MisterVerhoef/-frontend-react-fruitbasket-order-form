@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import CountingFruit from "./Components/CountingFruit";
+import TextInputField from "./Components/textInputField";
 import RadioButton from "./Components/radioButton";
 import strawberry from "./assets/strawberry.png";
 import banana from "./assets/banana.png";
@@ -88,42 +89,27 @@ function App() {
 
                 <form id="form-layout" onSubmit={handleSubmit}>
 
-                    <label htmlFor="Voornaam">Voornaam:
-                        <input type="text"
-                               id="Voornaam"
-                               name="Voornaam"
-                               value={nameValue}
-                               onChange={(e) => setNameValue(e.target.value)}
-                        />
-                    </label>
+                    <TextInputField
+                        textLabel={"Voornaam"}
+                        textValue={nameValue}
+                        onChange={(e) => setNameValue(e.target.value)}
+                    />
 
-                    <label htmlFor="Achternaam"> Achternaam:
-                        <input type="text"
-                               id="Achternaam"
-                               name="Achternaam"
-                               value={lastNameValue}
-                               onChange={(e) => setLastNameValue(e.target.value)}
-                        />
-                    </label>
-
-                    <label htmlFor="Leeftijd">Leeftijd:
-                        <input type="text"
-                               id="Leeftijd"
-                               name="Leeftijd"
-                               value={ageValue}
-                               onChange={(e) => setAgeValue(e.target.value)}
-                        />
-                    </label>
-
-                    <label htmlFor="Postcode"> Postcode:
-                        <input type="text"
-                               id="Postcode"
-                               name="Postcode"
-                               value={postcodeValue}
-                               onChange={(e) => setPostcodeValue(e.target.value)}
-                        />
-                    </label>
-
+                    <TextInputField
+                        textLabel={"Achternaam"}
+                        textValue={lastNameValue}
+                        onChange={(e) => setLastNameValue(e.target.value)}
+                    />
+                    <TextInputField
+                        textLabel={"Leeftijd"}
+                        textValue={ageValue}
+                        onChange={(e) => setAgeValue(e.target.value)}
+                    />
+                    <TextInputField
+                        textLabel={"Postcode"}
+                        textValue={postcodeValue}
+                        onChange={(e) => setPostcodeValue(e.target.value)}
+                    />
                     <p>Bezorgfrequentie</p>
                     <label htmlFor="dropdown-menu"></label>
                     <select value={bezorgFrequentie} onChange={handleChange}>
