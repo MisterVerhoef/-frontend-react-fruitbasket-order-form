@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+#fruit-counter {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    flex-basis: 350px;
+
+}
+
+#form-layout {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+}
+
