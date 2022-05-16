@@ -1,6 +1,6 @@
 import React from "react";
 
-const CountingFruit = ({fruitImage,fruitImageText,fruitName, fruitCounter, setFruitCounter}) => {
+const CountingFruit = ({fruitImage, fruitImageText, fruitName, fruitCounter, setFruitCounter}) => {
 
     return (
         <>
